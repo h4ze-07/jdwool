@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__content-wrapper">
+
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="/pages/catalog.html" class="header__nav-link">Каталог</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">Колекції</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">Покупцям</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">Про нас</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button id="burger" onclick="showMobileMenu()">
+                <img src="/src/icons/burger.svg" alt="menu">
+            </button>
+
+            <nav class="header__nav--mobile hidden" id="mobile-menu">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">Каталог</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">Колекції</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">Покупцям</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">Про нас</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <img src="/src/images/logo.png" alt="logo" class="logo header__logo">
+
+            <button class="lang">UA/ENG</button>
+
+            <div class="currency">
+                <p class="currency__text">UAH</p>
+                <img src="/src/icons/expand-more.svg" alt="expand more" class="currency__arrow">
+            </div>
+
+            <div class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a href="/"><img src="/src/icons/search.svg" alt="search" /></a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/"><img src="/src/icons/account.svg" alt="account" /></a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/"><img src="/src/icons/favorite.svg" alt="favorite"></a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/"><img src="/src/icons/shopping.svg" alt="shopping"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="product-wrapper">
+        <main class="product">
+            
+            <div class="product-card">
+
+                <div class="product-swiper">
+
+                    <img src="/src/images/girl3.jpg" alt="main" class="product-swiper__main">
+
+                    <div class="product-swiper_all">
+                        <img src="/src/images/girl3.jpg" alt="other">
+                        <img src="/src/images/girl2.jpg" alt="other">
+                        <img src="/src/images/girl1.jpg" alt="other">
+                        <img src="/src/images/girl4.jpg" alt="other">
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <h1 class="product-info__heading">Кардиган в смужку Sailor</h1>
+                    <p class="product-info__article">
+                        <span class="grey-text">Артикул:</span> 9874937
+                    </p>
+
+                    <div class="product-info__price">
+                        <span class="grey-text">Ціна:</span><span>2 985 грн.</span><span class="grey-text">2 985 грн.</span>
+                    </div>
+
+                    <div class="product-info__size">
+                        <p class="grey-text">Розмір:</p>
+                        <div class="product__sizes">
+                            <p class="sizes__text active-size">xs</p>
+                            <p class="sizes__text">s</p>
+                            <p class="sizes__text">m</p>
+                            <p class="sizes__text">l</p>
+                        </div>
+                    </div>
+
+                    <div class="product-info__color">
+                        <p class="grey-text">Колір:</p>
+                        <div class="pallete">
+                            <div class="pallete-circle black-fill"></div>
+                            <div class="pallete-circle white-fill"></div>
+                            <div class="pallete-circle pink-fill"></div>
+                            <div class="pallete-circle grey-fill"></div>
+                        </div>
+                        <p class="grey-text">білий</p>
+                    </div>
+
+                    <div class="product-info__buttons">
+                        <button class="button button--filled">додати до кошика</button>
+                        <button class="button button--transparent">
+                            <p>додати в обране</p>
+                            <img src="/src/icons/likedOutline.svg" alt="favorite">
+                        </button>
+                    </div>
+                    
+                    <ul class="product-info__nav">
+                        <li class="product-info__nav-item"><a href="/" class="active-item">Таблиця розмірів</a></li>
+                        <li class="product-info__nav-item"><a href="/">Опис</a></li>
+                        <li class="product-info__nav-item"><a href="/">Склад і догляд</a></li>
+                        <li class="product-info__nav-item"><a href="/">Характеристики</a></li>
+                    </ul>
+
+                    <div class="product-info__sizes">
+
+                        <div class="sizes-column">
+                            <p class="sizes-column__heading">Розмір/Параметри</p>
+                            <div class="sizes-column__types">
+                                <p class="sizes-column__type">XS</p>
+                                <p class="sizes-column__type">XS-S</p>
+                                <p class="sizes-column__type">S</p>
+                                <p class="sizes-column__type">M</p>
+                                <p class="sizes-column__type">M-L</p>
+                                <p class="sizes-column__type">L</p>
+                            </div>
+                        </div>
+                        
+                        <div class="sizes-column__wrapper">
+
+                            <div class="sizes-column">
+                                <p class="sizes-column__heading">Груди</p>
+                                <div class="sizes-column__types">
+                                    <p class="sizes-column__type">82-85</p>
+                                    <p class="sizes-column__type">82-89</p>
+                                    <p class="sizes-column__type">86-89</p>
+                                    <p class="sizes-column__type">90-93</p>
+                                    <p class="sizes-column__type">90-97</p>
+                                    <p class="sizes-column__type">94-97</p>
+                                </div>
+                            </div>
+
+                            <div class="sizes-column">
+                                <p class="sizes-column__heading">Талія</p>
+                                <div class="sizes-column__types">
+                                    <p class="sizes-column__type">60-67</p>
+                                    <p class="sizes-column__type">60-72</p>
+                                    <p class="sizes-column__type">68-72</p>
+                                    <p class="sizes-column__type">73-77</p>
+                                    <p class="sizes-column__type">73-82</p>
+                                    <p class="sizes-column__type">78-82</p>
+                                </div>
+                            </div>
+
+                            <div class="sizes-column">
+                                <p class="sizes-column__heading">Стегна</p>
+                                <div class="sizes-column__types">
+                                    <p class="sizes-column__type">90-94</p>
+                                    <p class="sizes-column__type">90-98</p>
+                                    <p class="sizes-column__type">95-98</p>
+                                    <p class="sizes-column__type">99-102</p>
+                                    <p class="sizes-column__type">99-106</p>
+                                    <p class="sizes-column__type">103-106</p>
+                                </div>
+                            </div>
+
+                    </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            
+
+            <div class="catalog-items-wrapper">
+
+                <h2 class="catalog-items-heading">Вам може сподобатись</h2>
+
+                <div class="catalog__line">
+
+                    <div class="card first-card">
+                        <img src="/src/icons/likedFilled.svg" alt="" class="like">
+
+                        <img src="/src/images/girl1.jpg" alt="photo 2" class="card__img">
+                        
+                        <div class="sizes">
+                            <p class="sizes__text">xs</p>
+                            <p class="sizes__text">s</p>
+                            <p class="sizes__text">m</p>
+                            <p class="sizes__text">l</p>
+                        </div>
+
+                        <div class="colors">
+                            <div class="colors__circle colors__black"></div>
+                            <div class="colors__circle colors__white"></div>
+                            <div class="colors__circle colors__red"></div>
+                            <div class="colors__circle colors__green"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <img src="/src/icons/likedOutline.svg" alt="" class="like">
+
+                        <img src="/src/images/girl2.jpg" alt="photo 2" class="card__img">
+
+                        <p class="card__title">Кардиган в смужку Sailor</p>
+
+                        <h3 class="card__price">2 985 грн.</h3>
+
+                        <a href="/pages/product-page.html" class="card__link">докладніше</a>
+                    </div>
+
+                    <div class="card">
+                        <img src="/src/icons/likedOutline.svg" alt="" class="like">
+
+                        <img src="/src/images/girl3.jpg" alt="photo 2" class="card__img">
+
+                        <p class="card__title">Кардиган в смужку Sailor </p>
+
+                        <h3 class="card__price">2 985 грн.</h3>
+
+                        <a href="/pages/product-page.html" class="card__link">докладніше</a>
+                    </div>
+
+                    <div class="card">
+                        <img src="/src/icons/likedOutline.svg" alt="" class="like">
+
+                        <img src="/src/images/girl4.jpg" alt="photo 2" class="card__img">
+
+                        <p class="card__title">Кардиган в смужку Sailor </p>
+
+                        <h3 class="card__price">2 985 грн.</h3>
+
+                        <a href="/pages/product-page.html" class="card__link">докладніше</a>
+                    </div>
+
+                </div>
+
+                <h2 class="catalog-items-heading">Ви раніше переглядали</h2>
+
+                <div class="catalog__line">
+
+                    <div class="card first-card">
+                        <img src="/src/icons/likedFilled.svg" alt="" class="like">
+
+                        <img src="/src/images/girl1.jpg" alt="photo 2" class="card__img">
+                        
+                        <div class="sizes">
+                            <p class="sizes__text">xs</p>
+                            <p class="sizes__text">s</p>
+                            <p class="sizes__text">m</p>
+                            <p class="sizes__text">l</p>
+                        </div>
+
+                        <div class="colors">
+                            <div class="colors__circle colors__black"></div>
+                            <div class="colors__circle colors__white"></div>
+                            <div class="colors__circle colors__red"></div>
+                            <div class="colors__circle colors__green"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <img src="/src/icons/likedOutline.svg" alt="" class="like">
+
+                        <img src="/src/images/girl2.jpg" alt="photo 2" class="card__img">
+
+                        <p class="card__title">Кардиган в смужку Sailor</p>
+
+                        <h3 class="card__price">2 985 грн.</h3>
+
+                        <a href="/pages/product-page.html" class="card__link">докладніше</a>
+                    </div>
+
+                    <div class="card">
+                        <img src="/src/icons/likedOutline.svg" alt="" class="like">
+
+                        <img src="/src/images/girl3.jpg" alt="photo 2" class="card__img">
+
+                        <p class="card__title">Кардиган в смужку Sailor </p>
+
+                        <h3 class="card__price">2 985 грн.</h3>
+
+                        <a href="/pages/product-page.html" class="card__link">докладніше</a>
+                    </div>
+
+                    <div class="card">
+                        <img src="/src/icons/likedOutline.svg" alt="" class="like">
+
+                        <img src="/src/images/girl4.jpg" alt="photo 2" class="card__img">
+
+                        <p class="card__title">Кардиган в смужку Sailor </p>
+
+                        <h3 class="card__price">2 985 грн.</h3>
+
+                        <a href="/pages/product-page.html" class="card__link">докладніше</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+    <footer class="footer">
+        
+        <div class="footer__wrapper">
+
+            <div class="footer__common-block">
+                <img src="/src/images/logo.png" alt="logo" class="logo footer__logo">
+                <img src="/src/images/visa.png" alt="logo" class="footer__visa-link">
+                <img src="/src/images/mastercard.png" alt="logo" class="footer__mc-link">
+            </div>
+
+            <div class="footer__socials">
+                <p class="footer__socials-heading">Ми в соціальних мережах</p>
+
+                <ul class="footer__socials-list">
+                    <li class="footer__socials-item"><a class="footer__socials-link" href="/">Instagram</a></li>
+                    <li class="footer__socials-item"><a class="footer__socials-link" href="/">Facebook</a></li>
+                    <li class="footer__socials-item"><a class="footer__socials-link" href="/">Telegram</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__client">
+                <p class="footer__client-heading">Інформація для клієнта</p>
+
+                <ul class="footer__client-list">
+                    <li class="footer__client-item"><a class="footer__client-link" href="/">Про нас</a></li>
+                    <li class="footer__client-item"><a class="footer__client-link" href="/">Контакти</a></li>
+                    <li class="footer__client-item"><a class="footer__client-link" href="/">Доставка і оплата</a></li>
+                    <li class="footer__client-item"><a class="footer__client-link" href="/">Обмін і поверння</a></li>
+                    <li class="footer__client-item"><a class="footer__client-link" href="/">Договір оферти</a></li>
+                    <li class="footer__client-item"><a class="footer__client-link" href="/">Політика конфіденційності</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__rights">
+                <div class="made-by">
+                    <p class="made-by__text">Розроблено компанією</p>
+                    <img src="/src//images/madeByLogo.png" alt="made by logo" class="made-by__logo">
+                </div>
+
+                <p class="footer__rights-text">©2023 Всі права захищені. Інтернет магазин J.D.Wool.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
