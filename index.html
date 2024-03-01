@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.D.Wool</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+    <header class="header">
+        <div class="header__content-wrapper">
+
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">Каталог</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">Колекції</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">Покупцям</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">Про нас</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button id="burger" onclick="showMobileMenu()">
+                <img src="/src/icons/burger.svg" alt="menu">
+            </button>
+
+            <nav class="header__nav--mobile hidden" id="mobile-menu">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">Каталог</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">Колекції</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">Покупцям</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">Про нас</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <img src="/src/images/logo.png" alt="logo" class="logo header__logo">
+
+            <button class="lang">UA/ENG</button>
+
+            <div class="currency">
+                <p class="currency__text">UAH</p>
+                <img src="/src/icons/expand-more.svg" alt="expand more" class="currency__arrow">
+            </div>
+
+            <div class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a href="/"><img src="/src/icons/search.svg" alt="search" /></a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/"><img src="/src/icons/account.svg" alt="account" /></a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/"><img src="/src/icons/favorite.svg" alt="favorite"></a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/"><img src="/src/icons/shopping.svg" alt="shopping"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <button class="button main__btn">
+            <p class="main__btn-text">каталог</p>
+            <img src="/src//icons/arrowRight.svg" alt="arrow right" class="main__btn-img">
+        </button>
+
+        <div class="slider-buttons">
+
+            <div class="slider-buttons__item slider-buttons__item--active"></div>
+            <div class="slider-buttons__item slider-buttons__item--unactive"></div>
+            <div class="slider-buttons__item slider-buttons__item--unactive"></div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        
+        <div class="footer__wrapper">
+
+            <div class="footer__common-block">
+                <img src="/src/images/logo.png" alt="logo" class="logo footer__logo">
+                <img src="/src/images/visa.png" alt="logo" class="footer__visa-link">
+                <img src="/src/images/mastercard.png" alt="logo" class="footer__mc-link">
+            </div>
+
+            <div class="footer__socials">
+                <p class="footer__socials-heading">Ми в соціальних мережах</p>
+
+                <ul class="footer__socials-list">
+                    <li class="footer__socials-item"><a class="footer__socials-link" href="/">Instagram</a></li>
+                    <li class="footer__socials-item"><a class="footer__socials-link" href="/">Facebook</a></li>
+                    <li class="footer__socials-item"><a class="footer__socials-link" href="/">Telegram</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__client">
+                <p class="footer__client-heading">Інформація для клієнта</p>
+
+                <ul class="footer__client-list">
+                    <li class="footer__client-item"><a class="footer__client-link" href="/">Про нас</a></li>
+                    <li class="footer__client-item"><a class="footer__client-link" href="/">Контакти</a></li>
+                    <li class="footer__client-item"><a class="footer__client-link" href="/">Доставка і оплата</a></li>
+                    <li class="footer__client-item"><a class="footer__client-link" href="/">Обмін і поверння</a></li>
+                    <li class="footer__client-item"><a class="footer__client-link" href="/">Договір оферти</a></li>
+                    <li class="footer__client-item"><a class="footer__client-link" href="/">Політика конфіденційності</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__rights">
+                <div class="made-by">
+                    <p class="made-by__text">Розроблено компанією</p>
+                    <img src="/src//images/madeByLogo.png" alt="made by logo" class="made-by__logo">
+                </div>
+
+                <p class="footer__rights-text">©2023 Всі права захищені. Інтернет магазин J.D.Wool.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
